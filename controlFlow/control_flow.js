@@ -57,3 +57,20 @@ let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticate
 
 //output
 console.log("Authentication Status:", authenticationStatus);
+
+//Tugas Praktik
+let userOtorisasi = "LoggedMember";
+let userServed;
+
+if (userOtorisasi === "LoggedMember"){
+    userServed = "Berhak mendapat Layanan Diet dan konsultasi";
+} else if (userOtorisasi === "Karyawan"){
+    userServed = "Berhak mendapat akses ke Layanan Diet";
+} else if (userOtorisasi === "Pelanggan") {
+    userServed = "Limited akses pada Layanan Diet";
+} else{
+    userServed = "Anda perlu mendaftar terlebih dahulu";
+}
+
+//output
+console.log("Pelayanan anda: ", userServed)
